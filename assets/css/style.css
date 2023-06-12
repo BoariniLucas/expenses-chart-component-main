@@ -1,0 +1,58 @@
+:root {
+    --principalFont: 'DM Sans', sans-serif;
+    --whiteColor: #ffffff;
+    --bodyBgColor: #f7e9dc;
+    --headerBgColor: #ec755d;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    font-family: var(--principalFont);
+    font-size: 18px;
+    background-color: var(--bodyBgColor);
+}
+
+.container {
+    height: 26em;
+    width: 25em;
+    background-color: red;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5em;
+    padding: 1.5em;
+    box-sizing: border-box;
+    border-radius: 15px;
+    color: var(--whiteColor);
+    background-color: var(--headerBgColor);
+}
+
+.header-container p {
+    font-size: 0.8em;
+    margin-bottom: 0.5em;
+}
+
+.header-container h1 {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.main-container {
+    height: 20em;
+    width: 100%;
+    border-radius: 15px;
+    margin-top: 1em;
+    background-color: var(--whiteColor);
+}
+
+
+/*-------------------------------------------*/
+/*   --Continuar desenvolvimento da main--   */
+/*-------------------------------------------*/
