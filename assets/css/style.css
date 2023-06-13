@@ -3,6 +3,11 @@
     --whiteColor: #ffffff;
     --bodyBgColor: #f7e9dc;
     --headerBgColor: #ec755d;
+    --dividerColor: #e2dbd3;
+    --spendingTitleColor: #312316;
+    --daysTextColor: #918a84;
+    --daysBarColor1: #ec755d;
+    --daysBarColor2: #76b5bc;
 }
 
 body {
@@ -19,7 +24,6 @@ body {
 .container {
     height: 26em;
     width: 25em;
-    background-color: red;
 }
 
 .header-container {
@@ -45,12 +49,91 @@ body {
 }
 
 .main-container {
-    height: 20em;
+    height: 22em;
     width: 100%;
     border-radius: 15px;
+    padding: 1em;
     margin-top: 1em;
+    box-sizing: border-box;
     background-color: var(--whiteColor);
 }
+
+.spending-container {
+    height: 13em;
+    border-bottom: solid 1px var(--dividerColor);
+}
+
+.spending-container h2 {
+    font-size: 1.2em;
+    font-weight: 700;
+    color: var(--spendingTitleColor);
+}
+
+.bars-container {
+    display: flex;
+    justify-content: space-between;
+    height: 10em;
+    width: 100%;
+    padding: 1.5em 0;
+    box-sizing: border-box;
+}
+
+.day-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    height: 9em;
+    width: 2.6em;
+}
+
+.day-container p {
+    font-size: 0.8em;
+    margin-top: 0.5em;
+    color: var(--daysTextColor);
+}
+
+.day-bar {
+    width: 100%;
+    border-radius: 5px;
+    background-color: var(--daysBarColor1);
+}
+
+.mon {
+    height: 17.45%;
+}
+
+.tue {
+    height: 34.91%;
+}
+
+.wed {
+    height: 52.36%;
+    background-color: var(--daysBarColor2);
+}
+
+.thu {
+    height: 31.07%;
+}
+
+.fri {
+    height: 23.39%;
+}
+
+.sat {
+    height: 43.28%;
+}
+
+.sun {
+    height: 25.48%;
+}
+
+
+
+
+
+
+
 
 
 /*-------------------------------------------*/
