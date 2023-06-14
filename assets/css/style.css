@@ -8,6 +8,9 @@
     --daysTextColor: #918a84;
     --daysBarColor1: #ec755d;
     --daysBarColor2: #76b5bc;
+    --daysBarColorHover1: #ff9b87;
+    --daysBarColorHover2: #b4dfe5;
+    --popUpPriceColor: #372416;
 }
 
 body {
@@ -99,34 +102,102 @@ body {
     background-color: var(--daysBarColor1);
 }
 
+.day-bar:hover {
+    cursor: pointer;
+    background-color: var(--daysBarColorHover1);
+
+}
+
+.tooltip-price {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    visibility: hidden;
+    font-size: 0.8em;
+    font-weight: 700;
+    border-radius: 5px;
+    padding: 0.5em;
+    color: var(--whiteColor);
+    background-color: var(--popUpPriceColor);
+}
+
 .mon {
-    height: 17.45%;
+    position: relative;
+    height: 27.45%;
+}
+
+.mon:hover .tooltip-price {
+    visibility: visible;
+    margin-top: -2.3em;
+    margin-left: -0.4em;
 }
 
 .tue {
-    height: 34.91%;
+    height: 44.91%;
+}
+
+.tue:hover .tooltip-price {
+    visibility: visible;
+    margin-top: -2.3em;
+    margin-left: -0.4em;
 }
 
 .wed {
-    height: 52.36%;
+    height: 62.36%;
     background-color: var(--daysBarColor2);
 }
 
+.wed:hover {
+    background-color: var(--daysBarColorHover2);
+}
+
+.wed:hover .tooltip-price {
+    visibility: visible;
+    margin-top: -2.3em;
+    margin-left: -0.4em;
+}
+
 .thu {
-    height: 31.07%;
+    height: 41.07%;
+}
+
+.thu:hover .tooltip-price {
+    visibility: visible;
+    margin-top: -2.3em;
+    margin-left: -0.4em;
 }
 
 .fri {
-    height: 23.39%;
+    height: 33.39%;
+}
+
+.fri:hover .tooltip-price {
+    visibility: visible;
+    margin-top: -2.3em;
+    margin-left: -0.4em;
 }
 
 .sat {
-    height: 43.28%;
+    height: 53.28%;
+}
+
+.sat:hover .tooltip-price {
+    visibility: visible;
+    margin-top: -2.3em;
+    margin-left: -0.4em;
 }
 
 .sun {
-    height: 25.48%;
+    height: 35.48%;
 }
+
+.sun:hover .tooltip-price {
+    visibility: visible;
+    margin-top: -2.3em;
+    margin-left: -0.4em;
+}
+
+
 
 
 
