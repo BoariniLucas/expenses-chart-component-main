@@ -52,7 +52,7 @@ body {
 }
 
 .main-container {
-    height: 22em;
+    height: 20.5em;
     width: 100%;
     border-radius: 15px;
     padding: 1em;
@@ -195,6 +195,37 @@ body {
     visibility: visible;
     margin-top: -2.3em;
     margin-left: -0.4em;
+}
+
+.totals {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    width: 100%;
+    padding: 1.5em 0;
+    box-sizing: border-box;
+}
+
+.totals p {
+    font-size: 0.8em;
+    color: var(--daysTextColor);
+}
+
+.totals h3 {
+    font-size: 2em;
+    font-weight: 700;
+    margin-top: 0.3em;
+    color: var(--spendingTitleColor);
+}
+
+.total-percentages {
+    text-align: right;
+}
+
+.total-percentages a {
+    font-size: 0.9em;
+    font-weight: 700;
+    color: var(--spendingTitleColor);
 }
 
 
