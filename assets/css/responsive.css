@@ -1,0 +1,12 @@
+@media screen and (max-width: 375px) {
+
+    .container {
+        height: 28em;
+        width: 20em;
+    }
+
+    .day-container {
+        width: 2.2em;
+    }
+    
+}
